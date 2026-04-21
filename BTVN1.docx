@@ -1,1 +1,11 @@
-a
+Việc để AUTHORS là thuộc tính của BOOKS là sai vì nó không phải dữ liệu đơn lẻ 
+mà là một đối tượng có nhiều thông tin riêng (tên, năm sinh, tiểu sử…). Khi làm
+vậy, mỗi cuốn sách lại phải lưu lại toàn bộ thông tin tác giả → dẫn đến lặp dữ
+liệu rất nhiều lần. Nếu cần sửa thông tin tác giả, bạn phải sửa ở nhiều dòng 
+khác nhau → dễ sai lệch.
+
+Ngoài ra, cách thiết kế này còn phá vỡ khả năng mở rộng: bạn không thể dễ dàng tìm
+tất cả sách của một tác giả, không thể tạo trang riêng cho tác giả, và cũng không 
+biểu diễn được trường hợp một sách có nhiều tác giả.
+
+Vì vậy, AUTHORS phải là thực thể riêng, không thể là thuộc tính.
